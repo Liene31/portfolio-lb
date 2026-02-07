@@ -1,5 +1,54 @@
 * {
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
   padding: 0;
   margin: 0;
+}
+
+body {
+  font-family: "Cinzel", serif;
+  font-size: 1.125rem;
+  background-color: #141211;
+  color: #e28d8d;
+}
+
+header {
+  background-color: #222222;
+  padding: 1.5rem 0;
+}
+
+header ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+header a {
+  color: #e28d8d;
+}
+
+.hero {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid #e28d8d;
+}
+
+.hero-cta,
+.hero-link {
+  font-family: "IM Fell English SC", serif;
+  font-weight: bold;
+  background-color: #e28d8d;
+  color: #141211;
+  border: none;
+  font-size: 1.125rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 25px;
+  cursor: pointer;
 }

@@ -7,13 +7,27 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
   font-family: "Cinzel", serif;
   font-size: 1.125rem;
   background-color: #141211;
   color: #e28d8d;
+  height: 100vh;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+
 header {
+  width: 100%;
   background-color: #222222;
   padding: 1.5rem 0;
 }
@@ -28,27 +42,80 @@ header a {
   color: #e28d8d;
 }
 
+/* HERO */
+
 .hero {
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .hero-image img {
-  width: 200px;
+  width: 350px;
   border-radius: 50%;
   border: 1px solid #e28d8d;
 }
 
+.hero p {
+  font-size: 1.2rem;
+  max-width: 350px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 40px;
+}
+
 .hero-cta,
 .hero-link {
-  font-family: "IM Fell English SC", serif;
-  font-weight: bold;
   background-color: #e28d8d;
   color: #141211;
+  font-family: "IM Fell English SC", serif;
+  font-weight: bold;
   border: none;
   font-size: 1.125rem;
   padding: 0.5rem 1.5rem;
   border-radius: 25px;
   cursor: pointer;
+
+  &&:hover {
+    background-color: #222222;
+    color: #e28d8d;
+    border: 1px solid #e28d8d;
+  }
+}
+
+/* SKILLS */
+
+.skills h2 {
+  text-align: center;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 3rem;
+
+  img {
+    width: 85px;
+  }
+}
+
+/* PORTFOLIO */
+
+/* CONTACT */
+
+.contact-img {
+  width: 100px;
+  border-radius: 5px;
+}
+
+footer {
+  width: 100%;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  background-color: #222222;
+  padding: 1.5rem 0;
 }

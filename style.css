@@ -9,9 +9,9 @@
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
   gap: 3rem;
-  font-family: "Cinzel", serif;
+  font-family: "Libre Baskerville", serif;
   font-size: 1.125rem;
   background-color: #141211;
   color: #e28d8d;
@@ -40,6 +40,8 @@ header ul {
 
 header a {
   color: #e28d8d;
+  text-transform: uppercase;
+  font-size: 1rem;
 }
 
 /* HERO */
@@ -47,7 +49,6 @@ header a {
 .hero {
   display: flex;
   gap: 2rem;
-  /* justify-content: center; */
   align-items: center;
 }
 
@@ -57,15 +58,28 @@ header a {
   border: 1px solid #e28d8d;
 }
 
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.hero h1 {
+  font-family: "IM Fell English SC", serif;
+  font-size: 2.5rem;
+  max-width: 400px;
+}
+
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1rem;
   max-width: 350px;
+  line-height: 1.5;
 }
 
 .hero-actions {
   display: flex;
   gap: 1rem;
-  margin-top: 40px;
+  /* margin-top: 20px; */
 }
 
 .hero-cta,
@@ -99,7 +113,7 @@ header a {
   gap: 3rem;
 
   img {
-    width: 85px;
+    width: 65px;
   }
 }
 
@@ -119,3 +133,8 @@ footer {
   background-color: #222222;
   padding: 1.5rem 0;
 }
+
+/* footer img {
+  filter: invert(89%) sepia(16%) saturate(2609%) hue-rotate(298deg)
+    brightness(97%) contrast(83%);
+} */

@@ -78,6 +78,7 @@ header a {
 
 .hero-actions {
   display: flex;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -98,6 +99,16 @@ header a {
     color: #e28d8d;
     border: 1px solid #e28d8d;
   }
+}
+
+.hero-social {
+  width: 20px;
+}
+
+.hero-cta:hover .hero-social,
+.hero-link:hover .hero-social {
+  filter: invert(78%) sepia(38%) saturate(1256%) hue-rotate(302deg)
+    brightness(102%) contrast(77%);
 }
 
 /* SKILLS */

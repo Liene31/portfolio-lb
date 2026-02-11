@@ -82,30 +82,15 @@ header a {
   gap: 1rem;
 }
 
-.hero-cta,
 .hero-link {
-  background-color: #e28d8d;
-  color: #141211;
-  font-family: "IM Fell English SC", serif;
-  font-weight: bold;
-  border: none;
-  font-size: 1.125rem;
   padding: 0.5rem 1.5rem;
   border-radius: 25px;
-  cursor: pointer;
-
-  &&:hover {
-    background-color: #222222;
-    color: #e28d8d;
-    border: 1px solid #e28d8d;
-  }
 }
 
 .hero-social {
   width: 20px;
 }
 
-.hero-cta:hover .hero-social,
 .hero-link:hover .hero-social {
   filter: invert(78%) sepia(38%) saturate(1256%) hue-rotate(302deg)
     brightness(102%) contrast(77%);
@@ -116,7 +101,6 @@ header a {
 .skills {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 3.5rem;
   font-family: "IM Fell English SC", serif;
 
@@ -138,6 +122,81 @@ header a {
 
 /* PORTFOLIO */
 
+.portfolio {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.portfolio h2 {
+  font-family: "IM Fell English SC", serif;
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+.projects-container {
+  display: flex;
+  gap: 2rem;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  max-width: 390px;
+  background: #222222;
+  border-radius: 1rem;
+  border: 2px solid #222222;
+}
+
+.project-image img {
+  width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  transition: opacity 0.3s ease-in-out;
+
+  &&:hover {
+    opacity: 0.7;
+  }
+}
+
+.project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+
+  h3 {
+    font-family: "IM Fell English SC", serif;
+    font-size: 1.5rem;
+  }
+
+  .tech {
+    font-family: "IM Fell English SC", serif;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    color: #e28d8d;
+    text-transform: uppercase;
+  }
+
+  .description {
+    font-size: 1rem;
+    color: #bfa5a4;
+    margin-bottom: 1rem;
+  }
+}
+
+.project-links {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+
+  .project-links-btn {
+    padding: 0.55rem 1.1rem;
+    border-radius: 0.6rem;
+  }
+}
+
+/* FOOTER */
+
 footer {
   display: flex;
   flex-direction: column;
@@ -147,4 +206,20 @@ footer {
   text-align: center;
   background-color: #222222;
   padding: 0.7rem 0;
+}
+
+/* BTN UTILITY */
+.btn {
+  font-family: "IM Fell English SC", serif;
+  font-weight: bold;
+  background-color: #e28d8d;
+  color: #141211;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+
+  &&:hover {
+    background-color: #222222;
+    color: #e28d8d;
+    border: 1px solid #e28d8d;
+  }
 }

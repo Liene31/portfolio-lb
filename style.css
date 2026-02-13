@@ -93,33 +93,15 @@ header a {
   flex-wrap: wrap;
 }
 
-.btn {
-  font-family: "IM Fell English SC", serif;
-  font-weight: bold;
-  background-color: #e28d8d;
-  color: #141211;
-  padding: 0.55rem 1.2rem;
-  border-radius: 0.6rem;
-  font-size: 1rem;
-  transition: 0.3s ease-in-out;
-
-  &&:hover {
-    background-color: #222222;
-    color: #e28d8d;
-    border: 1px solid #e28d8d;
-  }
-}
-
-.btn:hover {
-  background-color: #222222;
-  color: #e28d8d;
-  border: 1px solid #e28d8d;
-}
-
 .icon-link {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  &&:hover .hero-social {
+    filter: invert(78%) sepia(38%) saturate(1256%) hue-rotate(302deg)
+      brightness(102%) contrast(77%);
+  }
 }
 
 .hero-social {
@@ -273,10 +255,23 @@ header a {
   display: flex;
   gap: 0.8rem;
   flex-wrap: wrap;
+}
 
-  .project-links-btn {
-    padding: 0.55rem 1.1rem;
-    border-radius: 0.6rem;
+/* BUTTON */
+.btn {
+  font-family: "IM Fell English SC", serif;
+  font-weight: bold;
+  background-color: #e28d8d;
+  color: #141211;
+  padding: 0.55rem 1.2rem;
+  border-radius: 0.6rem;
+  font-size: 1rem;
+  transition: 0.3s ease-in-out;
+
+  &&:hover {
+    background-color: #222222;
+    color: #e28d8d;
+    border: 1px solid #e28d8d;
   }
 }
 
@@ -291,20 +286,4 @@ footer {
   text-align: center;
   background-color: #222222;
   padding: 0.7rem 0;
-}
-
-/* BTN UTILITY */
-.btn {
-  font-family: "IM Fell English SC", serif;
-  font-weight: bold;
-  background-color: #e28d8d;
-  color: #141211;
-  font-size: 1rem;
-  transition: 0.3s ease-in-out;
-
-  &&:hover {
-    background-color: #222222;
-    color: #e28d8d;
-    border: 1px solid #e28d8d;
-  }
 }

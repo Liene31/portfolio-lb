@@ -6,15 +6,30 @@
   margin: 0;
 }
 
+/* VARIABLES */
+
+:root {
+  /* colors */
+  --color-soft-red: #e28d8d;
+  --color-clay-pink: #bfa5a4;
+  --color-dark-black: #141211;
+  --color-lighter-black: #222222;
+  --color-accent-dark: #2b2b2b;
+
+  /* fonts */
+  --font-primary: "Libre Baskerville", serif;
+  --font-secondary: "IM Fell English SC", serif;
+}
+
 body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 3rem;
-  font-family: "Libre Baskerville", serif;
+  font-family: var(--font-primary);
   font-size: 1.125rem;
-  background-color: #141211;
-  color: #e28d8d;
+  background-color: var(--color-dark-black);
+  color: var(--color-soft-red);
   height: 100vh;
 }
 
@@ -28,7 +43,7 @@ main {
 
 header {
   width: 100%;
-  background-color: #222222;
+  background-color: var(--color-lighter-black);
   padding: 1.5rem 0;
 }
 
@@ -39,7 +54,7 @@ header ul {
 }
 
 header a {
-  color: #e28d8d;
+  color: var(--color-soft-red);
   text-transform: uppercase;
   font-size: 1rem;
 }
@@ -52,10 +67,10 @@ header a {
 }
 
 .hero-card {
-  background: #222222;
+  background-color: var(--color-lighter-black);
   border-radius: 1rem;
   padding: 2rem;
-  border: 1px solid #2b2b2b;
+  border: 1px solid var(--color-accent-dark);
 }
 
 .hero {
@@ -67,7 +82,7 @@ header a {
 .hero-image img {
   width: 300px;
   border-radius: 50%;
-  border: 1px solid #e28d8d;
+  border: 1px solid var(--color-soft-red);
 }
 
 .hero-content {
@@ -77,14 +92,14 @@ header a {
 }
 
 .hero h1 {
-  font-family: "IM Fell English SC", serif;
+  font-family: var(--font-secondary);
   font-size: 2.5rem;
 }
 
 .hero p {
   font-size: 1rem;
   line-height: 1.5;
-  color: #bfa5a4;
+  color: var(--color-clay-pink);
 }
 
 .hero-actions {
@@ -136,18 +151,18 @@ header a {
 }
 
 .skills-group {
-  background: #222222;
+  background-color: var(--color-lighter-black);
   border-radius: 1rem;
   padding: 1.5rem;
 }
 
 .skills-group h3 {
-  font-family: "IM Fell English SC", serif;
+  font-family: var(--font-secondary);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   font-size: 1rem;
   margin-bottom: 1rem;
-  color: #e28d8d;
+  color: var(--color-soft-red);
 }
 
 .skills-grid {
@@ -162,14 +177,14 @@ header a {
   gap: 1rem;
   padding: 1rem;
   border-radius: 1rem;
-  background: #141211;
-  border: 1px solid #2b2b2b;
-  color: #e28d8d;
+  background-color: var(--color-dark-black);
+  border: 1px solid var(--color-accent-dark);
+  color: var(--color-soft-red);
   transition: 0.3s ease-in-out;
 }
 
 .skill-card a:hover {
-  border-color: #e28d8d;
+  border-color: var(--color-soft-red);
 }
 
 .skill-card img {
@@ -178,13 +193,13 @@ header a {
 }
 
 .skill-name {
-  font-family: "IM Fell English SC", serif;
+  font-family: var(--font-secondary);
   font-size: 1.2rem;
 }
 
 .skill-desc {
   font-size: 0.9rem;
-  color: #bfa5a4;
+  color: var(--color-clay-pink);
   line-height: 1.3;
 }
 
@@ -210,9 +225,9 @@ header a {
 
 .project-card {
   width: 100%;
-  background: #222222;
+  background-color: var(--color-lighter-black);
   border-radius: 1rem;
-  border: 2px solid #222222;
+  border: 2px solid var(--color-lighter-black);
 }
 
 .project-image img {
@@ -233,21 +248,21 @@ header a {
 }
 
 .project-content h3 {
-  font-family: "IM Fell English SC", serif;
+  font-family: var(--font-secondary);
   font-size: 1.5rem;
 }
 
 .project-content .tech {
-  font-family: "IM Fell English SC", serif;
+  font-family: var(--font-secondary);
   font-size: 0.85rem;
   letter-spacing: 0.5px;
-  color: #e28d8d;
+  color: var(--color-soft-red);
   text-transform: uppercase;
 }
 
 .project-content .description {
   font-size: 1rem;
-  color: #bfa5a4;
+  color: var(--color-clay-pink);
   margin-bottom: 1rem;
 }
 
@@ -259,19 +274,19 @@ header a {
 
 /* BUTTON */
 .btn {
-  font-family: "IM Fell English SC", serif;
+  font-family: var(--font-secondary);
   font-weight: bold;
-  background-color: #e28d8d;
-  color: #141211;
+  background-color: var(--color-soft-red);
+  color: var(--color-dark-black);
   padding: 0.55rem 1.2rem;
   border-radius: 0.6rem;
   font-size: 1rem;
   transition: 0.3s ease-in-out;
 
   &&:hover {
-    background-color: #222222;
-    color: #e28d8d;
-    border: 1px solid #e28d8d;
+    background-color: var(--color-lighter-black);
+    color: var(--color-soft-red);
+    border: 1px solid var(--color-soft-red);
   }
 }
 
@@ -284,6 +299,6 @@ footer {
   width: 100%;
   font-size: 0.6rem;
   text-align: center;
-  background-color: #222222;
+  background-color: var(--color-lighter-black);
   padding: 0.7rem 0;
 }

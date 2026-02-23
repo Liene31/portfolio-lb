@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Material Icon CDN -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,11 +22,15 @@
   <body>
     <header>
       <nav>
-        <ul>
+        <ul class="hamburger-menu menu">
           <li><a href="./index.html">Home</a></li>
           <li><a href="./skills.html">Skills</a></li>
           <li><a href="./portfolio.html">Portfolio</a></li>
         </ul>
+        <button class="hamburger-btn">
+          <i class="menu-icon material-icons">menu</i>
+          <i class="close-icon material-icons">close</i>
+        </button>
       </nav>
     </header>
     <main>

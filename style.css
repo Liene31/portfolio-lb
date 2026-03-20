@@ -329,6 +329,20 @@ header a {
   flex-wrap: wrap;
 }
 
+@media (max-width: 790px) {
+  .project-content {
+    width: 100%;
+  }
+
+  .project-card {
+    flex-direction: column;
+  }
+
+  .project-image {
+    width: 100%;
+  }
+}
+
 /* BUTTON */
 .btn {
   font-family: var(--font-secondary);

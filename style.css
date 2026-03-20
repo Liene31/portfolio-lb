@@ -265,8 +265,8 @@ header a {
 }
 
 .projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
   width: 100%;
   max-width: 900px;
@@ -274,6 +274,7 @@ header a {
 }
 
 .project-card {
+  display: flex;
   width: 100%;
   background-color: var(--color-lighter-black);
   border-radius: 1rem;
@@ -281,14 +282,13 @@ header a {
 }
 .project-image {
   display: block;
-  aspect-ratio: 16 / 9;
+  width: 50%;
   overflow: hidden;
 }
 
 .project-image img {
   width: 100%;
-  height: 100%;
-  border-radius: 1rem 1rem 0 0;
+  border-radius: 0.5rem;
   transition: opacity 0.3s ease-in-out;
 
   &&:hover {
@@ -301,6 +301,7 @@ header a {
   flex-direction: column;
   gap: 0.5rem;
   padding: 1.5rem;
+  width: 50%;
 }
 
 .project-content h3 {
